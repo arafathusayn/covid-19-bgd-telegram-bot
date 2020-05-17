@@ -16,7 +16,9 @@ export default async (req: NowRequest, res: NowResponse): Promise<void> => {
     req.body.message.chat &&
     req.body.message.chat.id
 
-  await sendSummaryMessage(chatId, message)
+  if (chatId && typeof chatId === "number") {
+    await sendSummaryMessage(chatId, message)
+  }
 
   res.send("")
 }
