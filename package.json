@@ -1,0 +1,35 @@
+{
+  "name": "covid-19-bgd-telegram-bot",
+  "version": "1.0.0",
+  "description": "A telegram bot to get updates about COVID-19 in Bangladesh",
+  "main": "api/get-summary.ts",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arafathusayn/covid-19-bgd-telegram-bot.git"
+  },
+  "keywords": [
+    "covid",
+    "telegram",
+    "bangladesh"
+  ],
+  "author": "Arafat Husayn <hello@arafat.dev>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/arafathusayn/covid-19-bgd-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/arafathusayn/covid-19-bgd-telegram-bot#readme",
+  "devDependencies": {
+    "@now/node": "^1.6.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "got": "^11.1.4"
+  }
+}
